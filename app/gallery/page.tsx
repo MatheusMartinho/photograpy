@@ -6,6 +6,7 @@ import { DitherImage } from "@/components/dither/DitherImage";
 import { Lightbox } from "@/components/gallery/Lightbox";
 import { motion, AnimatePresence } from "framer-motion"; // Added AnimatePresence
 import { Search } from "lucide-react";
+import { Navigation } from "@/components/ui/Navigation";
 
 const categories = ["All", "Wildlife", "Landscapes", "Abstract"];
 
@@ -24,7 +25,9 @@ export default function GalleryPage() {
   });
 
   return (
-    <div className="min-h-screen bg-background text-foreground pt-16 md:pt-0 md:pl-24">
+    <main className="min-h-screen bg-background text-foreground">
+      <Navigation />
+      <div className="pt-16 md:pt-0 md:pl-24">
       {/* Header / Filter Bar */}
       <div className="border-b border-foreground/20 p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-8 sticky top-16 md:top-0 bg-background z-40">
         <div>
@@ -121,6 +124,7 @@ export default function GalleryPage() {
           />
         )}
       </AnimatePresence>
-    </div>
+      </div>
+    </main>
   );
 }

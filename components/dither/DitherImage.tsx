@@ -23,7 +23,7 @@ export function DitherImage({
 
   return (
     <div
-      className={cn("relative overflow-hidden group", className)}
+      className={cn("relative overflow-hidden group w-full h-full", className)}
     >
       <Image
         src={src}

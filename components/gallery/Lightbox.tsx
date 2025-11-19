@@ -140,7 +140,7 @@ export function Lightbox({ photos, initialIndex, onClose }: LightboxProps) {
       {/* Toggle Info Button */}
       <button
         onClick={(e) => { e.stopPropagation(); setShowInfo(!showInfo); }}
-        className="absolute bottom-8 right-8 md:top-8 md:right-20 text-white p-3 hover:text-accent z-50 bg-zinc-800/50 hover:bg-zinc-800 rounded-full backdrop-blur-sm transition-all"
+        className="absolute bottom-6 right-6 w-12 h-12 flex items-center justify-center text-white bg-zinc-900/70 border border-accent/40 rounded-full shadow-lg hover:bg-accent hover:text-black transition-colors z-50"
         title="Toggle Info"
       >
         <Info size={24} />
